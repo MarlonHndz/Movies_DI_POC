@@ -1,6 +1,6 @@
 package com.android.marlon.dependencyinjectionpoc.data.retrofit
 
-import com.android.marlon.dependencyinjectionpoc.MyApplication
+import android.content.Context
 import com.android.marlon.dependencyinjectionpoc.R
 import com.android.marlon.dependencyinjectionpoc.data.models.MovieLocal
 import com.android.marlon.dependencyinjectionpoc.data.models.MovieResponse
@@ -8,10 +8,11 @@ import com.android.marlon.dependencyinjectionpoc.data.retrofit.StringUtils.EMPTY
 import com.android.marlon.dependencyinjectionpoc.data.roomDB.AppDatabase
 import java.util.*
 
-class MovieService {
+class MovieService(
+    private val context: Context
+) {
 
     fun getMoviesFromServerEmulated(): MovieResponse {
-        val context = MyApplication.applicationContext()
         val movieList: MutableList<MovieResponse.Data.Movie> = ArrayList<MovieResponse.Data.Movie>()
         val arrayMovies = context.resources.getStringArray(R.array.movies_array)
         for (i in arrayMovies.indices) {

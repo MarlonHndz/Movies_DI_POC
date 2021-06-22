@@ -24,6 +24,7 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
             // Image
             Picasso.get()
                 .load(movie.imageURL)
+                .placeholder(R.drawable.movie_background)
                 .into(itemView.imvMovie)
 
             // SetUp Listener

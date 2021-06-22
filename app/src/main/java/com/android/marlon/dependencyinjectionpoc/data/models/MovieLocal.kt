@@ -3,8 +3,8 @@ package com.android.marlon.dependencyinjectionpoc.data.models
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.android.marlon.dependencyinjectionpoc.data.roomDB.AppDatabase.Companion.MOVIE_TABLE_NAME
 import com.android.marlon.dependencyinjectionpoc.data.retrofit.StringUtils.EMPTY_STRING
+import com.android.marlon.dependencyinjectionpoc.data.roomDB.AppDatabase.Companion.MOVIE_TABLE_NAME
 
 @Entity(tableName = MOVIE_TABLE_NAME)
 data class MovieLocal(

@@ -1,26 +1,20 @@
 package com.android.marlon.dependencyinjectionpoc
 
 import android.app.Application
-import android.content.Context
+import com.android.marlon.dependencyinjectionpoc.di.dataModule
+import com.android.marlon.dependencyinjectionpoc.di.domainModule
+import com.android.marlon.dependencyinjectionpoc.di.presentationModule
+import org.koin.android.ext.koin.androidContext
+import org.koin.core.context.startKoin
 
 
 class MyApplication : Application() {
 
-    init {
-        instance = this
-    }
-
-    companion object {
-        private var instance: MyApplication? = null
-
-        fun applicationContext() : Context {
-            return instance!!.applicationContext
-        }
-    }
-
     override fun onCreate() {
         super.onCreate()
-
-        val context: Context = MyApplication.applicationContext()
+        startKoin {
+            androidContext(this@MyApplication)
+            modules(domainModule, dataModule, presentationModule)
+        }
     }
 }

@@ -4,9 +4,9 @@ import com.android.marlon.dependencyinjectionpoc.data.models.MovieLocal
 import com.android.marlon.dependencyinjectionpoc.data.models.MovieResponse
 
 class MovieResponseToMovieLocalMapper {
-    private val movieList = mutableListOf<MovieLocal>()
 
     operator fun invoke(movieResponse: MovieResponse): List<MovieLocal>{
+        val movieList = mutableListOf<MovieLocal>()
         movieResponse.data.movies.map { movie ->
             val newMovie = MovieLocal(
                 name = movie.name,

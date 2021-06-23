@@ -1,4 +1,4 @@
-package com.android.marlon.dependencyinjectionpoc.domain.model
+package com.android.marlon.domain.models
 
 import java.io.Serializable
 

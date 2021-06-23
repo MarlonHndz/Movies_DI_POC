@@ -1,2 +1,3 @@
-rootProject.name = "Dependency Injection POC"
+rootProject.name = "Movies_DI_POC"
 include ':app'
+include ':domain'

@@ -4,10 +4,9 @@ import com.android.marlon.dependencyinjectionpoc.data.datasources.MovieLocalData
 import com.android.marlon.dependencyinjectionpoc.data.datasources.MovieRemoteDataSource
 import com.android.marlon.dependencyinjectionpoc.data.mappers.MovieMapper
 import com.android.marlon.dependencyinjectionpoc.data.mappers.MovieResponseToMovieLocalMapper
-import com.android.marlon.dependencyinjectionpoc.data.models.MovieLocal
 import com.android.marlon.dependencyinjectionpoc.data.models.MovieResponse
-import com.android.marlon.dependencyinjectionpoc.domain.model.Movie
-import com.android.marlon.dependencyinjectionpoc.domain.repositories.MovieRepository
+import com.android.marlon.domain.models.Movie
+import com.android.marlon.domain.repositories.MovieRepository
 
 class MovieRepositoryImpl(
     private val movieLocalDataSource: MovieLocalDataSource,

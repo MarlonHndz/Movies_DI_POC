@@ -4,8 +4,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.android.marlon.dependencyinjectionpoc.domain.model.Movie
-import com.android.marlon.dependencyinjectionpoc.domain.useCases.GetMoviesUseCase
+import com.android.marlon.domain.models.Movie
+import com.android.marlon.domain.useCases.GetMoviesUseCase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

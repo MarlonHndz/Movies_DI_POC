@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.android.marlon.dependencyinjectionpoc.R
-import com.android.marlon.dependencyinjectionpoc.domain.model.Movie
+import com.android.marlon.domain.models.Movie
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item_movie.view.*
 

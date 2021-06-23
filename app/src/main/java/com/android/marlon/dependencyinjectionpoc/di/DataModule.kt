@@ -7,7 +7,7 @@ import com.android.marlon.dependencyinjectionpoc.data.mappers.MovieResponseToMov
 import com.android.marlon.dependencyinjectionpoc.data.repositories.MovieRepositoryImpl
 import com.android.marlon.dependencyinjectionpoc.data.retrofit.MovieService
 import com.android.marlon.dependencyinjectionpoc.data.roomDB.AppDatabase
-import com.android.marlon.dependencyinjectionpoc.domain.repositories.MovieRepository
+import com.android.marlon.domain.repositories.MovieRepository
 import org.koin.dsl.module
 
 val dataModule = module {

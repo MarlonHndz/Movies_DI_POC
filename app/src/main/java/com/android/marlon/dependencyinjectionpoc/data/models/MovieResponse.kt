@@ -10,7 +10,7 @@ data class MovieResponse(
         val after: String,
         val before: String,
         val movies: List<Movie>,
-        val dist: Int,
+        val dist: Int
     ) {
         data class Movie(
             var genre: String = EMPTY_STRING,

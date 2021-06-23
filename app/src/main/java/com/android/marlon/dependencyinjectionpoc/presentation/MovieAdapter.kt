@@ -9,7 +9,6 @@ import com.android.marlon.dependencyinjectionpoc.domain.model.Movie
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item_movie.view.*
 
-
 class MovieAdapter : RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
 
     private var items = mutableListOf<Movie>()
@@ -28,10 +27,9 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
                 .into(itemView.imvMovie)
 
             // SetUp Listener
-            itemView.setOnClickListener{
+            itemView.setOnClickListener {
                 listener?.itemClicked(movie)
             }
-
         }
     }
 

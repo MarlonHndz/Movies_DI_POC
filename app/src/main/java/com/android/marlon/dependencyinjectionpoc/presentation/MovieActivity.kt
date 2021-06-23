@@ -53,7 +53,6 @@ class MovieActivity : AppCompatActivity() {
             override fun itemClicked(movie: Movie) {
                 navigateToMovieDetails(movie)
             }
-
         })
     }
 
@@ -65,5 +64,4 @@ class MovieActivity : AppCompatActivity() {
     private fun loadData() {
         viewModel.fetchMovies()
     }
-
 }

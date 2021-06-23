@@ -30,7 +30,6 @@ abstract class AppDatabase : RoomDatabase() {
                 .fallbackToDestructiveMigration()
                 .build()
 
-
         private var INSTANCE: AppDatabase? = null
         const val DATABASE_VERSION = 1
         private const val DATABASE_NAME = "di_poc_movie_database"

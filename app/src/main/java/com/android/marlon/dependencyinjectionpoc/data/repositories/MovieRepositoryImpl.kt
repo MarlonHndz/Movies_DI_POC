@@ -4,7 +4,6 @@ import com.android.marlon.dependencyinjectionpoc.data.datasources.MovieLocalData
 import com.android.marlon.dependencyinjectionpoc.data.datasources.MovieRemoteDataSource
 import com.android.marlon.dependencyinjectionpoc.data.mappers.MovieMapper
 import com.android.marlon.dependencyinjectionpoc.data.mappers.MovieResponseToMovieLocalMapper
-import com.android.marlon.dependencyinjectionpoc.data.models.MovieLocal
 import com.android.marlon.dependencyinjectionpoc.data.models.MovieResponse
 import com.android.marlon.dependencyinjectionpoc.domain.model.Movie
 import com.android.marlon.dependencyinjectionpoc.domain.repositories.MovieRepository

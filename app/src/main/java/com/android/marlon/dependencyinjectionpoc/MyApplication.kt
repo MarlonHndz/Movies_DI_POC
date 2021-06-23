@@ -7,7 +7,6 @@ import com.android.marlon.dependencyinjectionpoc.di.presentationModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
-
 class MyApplication : Application() {
 
     override fun onCreate() {

@@ -1,4 +1,4 @@
-package com.android.marlon.dependencyinjectionpoc.di
+package com.android.marlon.data.di
 
 import com.android.marlon.dependencyinjectionpoc.data.datasources.MovieLocalDataSource
 import com.android.marlon.dependencyinjectionpoc.data.datasources.MovieRemoteDataSource

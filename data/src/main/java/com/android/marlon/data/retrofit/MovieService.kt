@@ -1,7 +1,7 @@
 package com.android.marlon.dependencyinjectionpoc.data.retrofit
 
 import android.content.Context
-import com.android.marlon.dependencyinjectionpoc.R
+import com.android.marlon.data.R
 import com.android.marlon.dependencyinjectionpoc.data.models.MovieLocal
 import com.android.marlon.dependencyinjectionpoc.data.models.MovieResponse
 import com.android.marlon.dependencyinjectionpoc.data.retrofit.StringUtils.EMPTY_STRING

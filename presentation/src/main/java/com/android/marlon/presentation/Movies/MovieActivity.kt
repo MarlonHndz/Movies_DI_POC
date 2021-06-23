@@ -5,8 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.android.marlon.dependencyinjectionpoc.R
 import com.android.marlon.domain.models.Movie
+import com.android.marlon.presentation.R
 import kotlinx.android.synthetic.main.activity_movie.*
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel

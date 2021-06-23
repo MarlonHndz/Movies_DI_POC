@@ -2,3 +2,4 @@ rootProject.name = "Movies_DI_POC"
 include ':app'
 include ':domain'
 include ':data'
+include ':presentation'

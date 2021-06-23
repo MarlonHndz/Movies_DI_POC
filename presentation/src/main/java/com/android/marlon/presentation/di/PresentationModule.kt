@@ -1,4 +1,4 @@
-package com.android.marlon.dependencyinjectionpoc.di
+package com.android.marlon.presentation
 
 import com.android.marlon.dependencyinjectionpoc.presentation.MovieAdapter
 import com.android.marlon.dependencyinjectionpoc.presentation.MovieViewModel

@@ -1,12 +1,12 @@
 package com.android.marlon.data.di
 
-import com.android.marlon.dependencyinjectionpoc.data.datasources.MovieLocalDataSource
-import com.android.marlon.dependencyinjectionpoc.data.datasources.MovieRemoteDataSource
-import com.android.marlon.dependencyinjectionpoc.data.mappers.MovieMapper
-import com.android.marlon.dependencyinjectionpoc.data.mappers.MovieResponseToMovieLocalMapper
-import com.android.marlon.dependencyinjectionpoc.data.repositories.MovieRepositoryImpl
-import com.android.marlon.dependencyinjectionpoc.data.retrofit.MovieService
-import com.android.marlon.dependencyinjectionpoc.data.roomDB.AppDatabase
+import com.android.marlon.data.datasources.MovieLocalDataSource
+import com.android.marlon.data.datasources.MovieRemoteDataSource
+import com.android.marlon.data.mappers.MovieMapper
+import com.android.marlon.data.mappers.MovieResponseToMovieLocalMapper
+import com.android.marlon.data.repositories.MovieRepositoryImpl
+import com.android.marlon.data.retrofit.MovieService
+import com.android.marlon.data.roomDB.AppDatabase
 import com.android.marlon.domain.repositories.MovieRepository
 import org.koin.dsl.module
 

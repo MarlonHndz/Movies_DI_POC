@@ -1,7 +1,7 @@
-package com.android.marlon.dependencyinjectionpoc.data.datasources
+package com.android.marlon.data.datasources
 
-import com.android.marlon.dependencyinjectionpoc.data.models.MovieResponse
-import com.android.marlon.dependencyinjectionpoc.data.retrofit.MovieService
+import com.android.marlon.data.models.MovieResponse
+import com.android.marlon.data.retrofit.MovieService
 
 class MovieRemoteDataSource(
     private val movieService: MovieService

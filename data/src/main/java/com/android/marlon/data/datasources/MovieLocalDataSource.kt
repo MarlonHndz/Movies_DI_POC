@@ -1,9 +1,7 @@
-package com.android.marlon.dependencyinjectionpoc.data.datasources
+package com.android.marlon.data.datasources
 
-import androidx.lifecycle.LiveData
-import com.android.marlon.dependencyinjectionpoc.data.models.MovieLocal
-import com.android.marlon.dependencyinjectionpoc.data.roomDB.AppDatabase
-import com.android.marlon.dependencyinjectionpoc.data.roomDB.daos.MovieDao
+import com.android.marlon.data.models.MovieLocal
+import com.android.marlon.data.roomDB.AppDatabase
 
 class MovieLocalDataSource(
     private val appDatabase: AppDatabase

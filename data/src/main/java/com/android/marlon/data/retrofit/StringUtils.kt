@@ -1,4 +1,4 @@
-package com.android.marlon.dependencyinjectionpoc.data.retrofit
+package com.android.marlon.data.retrofit
 
 object StringUtils {
     const val EMPTY_STRING = ""

@@ -1,11 +1,11 @@
-package com.android.marlon.dependencyinjectionpoc.data.roomDB
+package com.android.marlon.data.roomDB
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.android.marlon.dependencyinjectionpoc.data.models.MovieLocal
-import com.android.marlon.dependencyinjectionpoc.data.roomDB.daos.MovieDao
+import com.android.marlon.data.models.MovieLocal
+import com.android.marlon.data.roomDB.daos.MovieDao
 
 @Database(entities = [MovieLocal::class], version = AppDatabase.DATABASE_VERSION)
 abstract class AppDatabase : RoomDatabase() {

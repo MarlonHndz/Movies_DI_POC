@@ -1,11 +1,11 @@
-package com.android.marlon.dependencyinjectionpoc.data.retrofit
+package com.android.marlon.data.retrofit
 
 import android.content.Context
 import com.android.marlon.data.R
-import com.android.marlon.dependencyinjectionpoc.data.models.MovieLocal
-import com.android.marlon.dependencyinjectionpoc.data.models.MovieResponse
-import com.android.marlon.dependencyinjectionpoc.data.retrofit.StringUtils.EMPTY_STRING
-import com.android.marlon.dependencyinjectionpoc.data.roomDB.AppDatabase
+import com.android.marlon.data.models.MovieLocal
+import com.android.marlon.data.models.MovieResponse
+import com.android.marlon.data.retrofit.StringUtils.EMPTY_STRING
+import com.android.marlon.data.roomDB.AppDatabase
 import java.util.*
 
 class MovieService(

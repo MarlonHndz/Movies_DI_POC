@@ -1,10 +1,10 @@
-package com.android.marlon.dependencyinjectionpoc.data.repositories
+package com.android.marlon.data.repositories
 
-import com.android.marlon.dependencyinjectionpoc.data.datasources.MovieLocalDataSource
-import com.android.marlon.dependencyinjectionpoc.data.datasources.MovieRemoteDataSource
-import com.android.marlon.dependencyinjectionpoc.data.mappers.MovieMapper
-import com.android.marlon.dependencyinjectionpoc.data.mappers.MovieResponseToMovieLocalMapper
-import com.android.marlon.dependencyinjectionpoc.data.models.MovieResponse
+import com.android.marlon.data.datasources.MovieLocalDataSource
+import com.android.marlon.data.datasources.MovieRemoteDataSource
+import com.android.marlon.data.mappers.MovieMapper
+import com.android.marlon.data.mappers.MovieResponseToMovieLocalMapper
+import com.android.marlon.data.models.MovieResponse
 import com.android.marlon.domain.models.Movie
 import com.android.marlon.domain.repositories.MovieRepository
 

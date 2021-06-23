@@ -1,7 +1,7 @@
-package com.android.marlon.dependencyinjectionpoc.data.mappers
+package com.android.marlon.data.mappers
 
-import com.android.marlon.dependencyinjectionpoc.data.models.MovieLocal
-import com.android.marlon.dependencyinjectionpoc.data.models.MovieResponse
+import com.android.marlon.data.models.MovieLocal
+import com.android.marlon.data.models.MovieResponse
 
 class MovieResponseToMovieLocalMapper {
 

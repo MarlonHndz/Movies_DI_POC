@@ -1,6 +1,6 @@
-package com.android.marlon.dependencyinjectionpoc.data.models
+package com.android.marlon.data.models
 
-import com.android.marlon.dependencyinjectionpoc.data.retrofit.StringUtils.EMPTY_STRING
+import com.android.marlon.data.retrofit.StringUtils.EMPTY_STRING
 
 data class MovieResponse(
     val `data`: Data,

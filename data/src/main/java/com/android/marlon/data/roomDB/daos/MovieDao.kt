@@ -1,8 +1,12 @@
-package com.android.marlon.dependencyinjectionpoc.data.roomDB.daos
+package com.android.marlon.data.roomDB.daos
 
-import androidx.lifecycle.LiveData
-import androidx.room.*
-import com.android.marlon.dependencyinjectionpoc.data.models.MovieLocal
+import androidx.room.Dao
+import androidx.room.Delete
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
+import androidx.room.Update
+import com.android.marlon.data.models.MovieLocal
 
 @Dao
 interface MovieDao {

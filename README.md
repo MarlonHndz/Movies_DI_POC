@@ -6,7 +6,7 @@ POC using latest Architecture components and Dependency Injection
 ### Libraries
 - **Android ViewModels**
 - **Android LiveData**: UI updates from ViewModel to Activity
-- **Koin**: Dependency injection
+- **Hilt**: Dependency injection
 - **Room**: Local database
 
 ### Background Strategy:

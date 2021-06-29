@@ -5,10 +5,12 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.android.marlon.dependencyinjectionpoc.data.retrofit.StringUtils.EMPTY_STRING
 import com.android.marlon.dependencyinjectionpoc.data.roomDB.AppDatabase.Companion.MOVIE_TABLE_NAME
+import java.util.UUID
 
 @Entity(tableName = MOVIE_TABLE_NAME)
 data class MovieLocal(
-    @PrimaryKey @ColumnInfo(name = "name") val name: String = EMPTY_STRING,
+    @PrimaryKey @ColumnInfo(name = "entryid") var id: String = UUID.randomUUID().toString(),
+    @ColumnInfo(name = "name") val name: String = EMPTY_STRING,
     @ColumnInfo(name = "genre") val genre: String = EMPTY_STRING,
     @ColumnInfo(name = "director") val director: String = EMPTY_STRING,
     @ColumnInfo(name = "imageURL") val imageURL: String = EMPTY_STRING,

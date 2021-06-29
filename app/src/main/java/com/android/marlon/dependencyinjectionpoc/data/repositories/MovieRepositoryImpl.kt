@@ -7,8 +7,9 @@ import com.android.marlon.dependencyinjectionpoc.data.mappers.MovieResponseToMov
 import com.android.marlon.dependencyinjectionpoc.data.models.MovieResponse
 import com.android.marlon.dependencyinjectionpoc.domain.model.Movie
 import com.android.marlon.dependencyinjectionpoc.domain.repositories.MovieRepository
+import javax.inject.Inject
 
-class MovieRepositoryImpl(
+class MovieRepositoryImpl @Inject constructor(
     private val movieLocalDataSource: MovieLocalDataSource,
     private val movieRemoteDataSource: MovieRemoteDataSource,
     private val movieResponseToMovieLocalMapper: MovieResponseToMovieLocalMapper,

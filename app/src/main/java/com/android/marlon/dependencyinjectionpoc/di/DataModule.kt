@@ -1,25 +1,40 @@
 package com.android.marlon.dependencyinjectionpoc.di
 
-import com.android.marlon.dependencyinjectionpoc.data.datasources.MovieLocalDataSource
-import com.android.marlon.dependencyinjectionpoc.data.datasources.MovieRemoteDataSource
-import com.android.marlon.dependencyinjectionpoc.data.mappers.MovieMapper
-import com.android.marlon.dependencyinjectionpoc.data.mappers.MovieResponseToMovieLocalMapper
+import android.content.Context
 import com.android.marlon.dependencyinjectionpoc.data.repositories.MovieRepositoryImpl
-import com.android.marlon.dependencyinjectionpoc.data.retrofit.MovieService
 import com.android.marlon.dependencyinjectionpoc.data.roomDB.AppDatabase
+import com.android.marlon.dependencyinjectionpoc.data.roomDB.daos.MovieDao
 import com.android.marlon.dependencyinjectionpoc.domain.repositories.MovieRepository
-import org.koin.dsl.module
+import dagger.Binds
+import dagger.Module
+import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.android.components.ApplicationComponent
+import dagger.hilt.android.qualifiers.ApplicationContext
+import javax.inject.Singleton
 
-val dataModule = module {
+@Module
+@InstallIn(ApplicationComponent::class)
+abstract class DataModule {
 
-    factory { MovieService(get()) }
-    single { AppDatabase.getInstance(get()) }
-    single { get<AppDatabase>().movieDao() }
+    @Binds
+    abstract fun bindMovieRepository(
+        movieRepositoryImpl: MovieRepositoryImpl
+    ): MovieRepository
+}
 
-    single { MovieLocalDataSource(get()) }
-    single { MovieRemoteDataSource(get()) }
+@Module
+@InstallIn(ApplicationComponent::class)
+object DatabaseModule {
 
-    factory { MovieMapper() }
-    factory { MovieResponseToMovieLocalMapper() }
-    factory<MovieRepository> { MovieRepositoryImpl(get(), get(), get(), get()) }
+    @Provides
+    @Singleton
+    fun provideDatabase(@ApplicationContext appContext: Context): AppDatabase {
+        return AppDatabase.getInstance(appContext)
+    }
+
+    @Provides
+    fun provideMovieDao(database: AppDatabase): MovieDao {
+        return database.movieDao()
+    }
 }

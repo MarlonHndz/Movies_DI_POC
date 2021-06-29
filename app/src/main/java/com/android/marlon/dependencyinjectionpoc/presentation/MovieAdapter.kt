@@ -7,9 +7,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.android.marlon.dependencyinjectionpoc.R
 import com.android.marlon.dependencyinjectionpoc.domain.model.Movie
 import com.squareup.picasso.Picasso
+import javax.inject.Inject
 import kotlinx.android.synthetic.main.item_movie.view.*
 
-class MovieAdapter : RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
+class MovieAdapter @Inject constructor() :
+    RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
 
     private var items = mutableListOf<Movie>()
     private var listener: Listener? = null

@@ -4,9 +4,11 @@ import android.content.Context
 import com.android.marlon.dependencyinjectionpoc.R
 import com.android.marlon.dependencyinjectionpoc.data.models.MovieResponse
 import com.android.marlon.dependencyinjectionpoc.data.retrofit.StringUtils.EMPTY_STRING
+import dagger.hilt.android.qualifiers.ApplicationContext
+import javax.inject.Inject
 
-class MovieService(
-    private val context: Context
+class MovieService @Inject constructor(
+    @ApplicationContext private val context: Context
 ) {
 
     fun getMoviesFromServerEmulated(): MovieResponse {

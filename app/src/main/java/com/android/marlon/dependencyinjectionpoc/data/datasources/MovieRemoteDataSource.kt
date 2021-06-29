@@ -2,8 +2,9 @@ package com.android.marlon.dependencyinjectionpoc.data.datasources
 
 import com.android.marlon.dependencyinjectionpoc.data.models.MovieResponse
 import com.android.marlon.dependencyinjectionpoc.data.retrofit.MovieService
+import javax.inject.Inject
 
-class MovieRemoteDataSource(
+class MovieRemoteDataSource @Inject constructor(
     private val movieService: MovieService
 ) {
     /**
